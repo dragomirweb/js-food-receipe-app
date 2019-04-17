@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dragomirweb/js-food-receipe-app/issues"
   },
-  "homepage": "https://github.com/dragomirweb/js-food-receipe-app#readme"
+  "homepage": "https://github.com/dragomirweb/js-food-receipe-app#readme",
+  "devDependencies": {
+    "webpack": "^4.2.0"
+  }
 }
