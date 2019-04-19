@@ -17,7 +17,8 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        new Dotenv()
+        // adds webpack env to build process
+       // new Dotenv()
     ],
     module: {
         rules: [
