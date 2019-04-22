@@ -1,6 +1,6 @@
 import Search from './models/Search';
 import * as searchView from './views/searchView';
-import { elements, renderLoader } from './views/base';
+import { elements, renderLoader, clearLoader } from './views/base';
 
 //add random method to arrays
 Array.prototype.random = function () {
@@ -35,6 +35,7 @@ const controlSearch = async () => {
         await state.search.getResults();
 
         //5. Render results to ui
+        clearLoader();
         searchView.renderResult(state.search.result);
     }
 };
