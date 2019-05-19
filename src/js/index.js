@@ -47,6 +47,7 @@ elements.searchForm.addEventListener('submit', e => {
     controlSearch();
 });
 
+
 elements.searchResPages.addEventListener('click', (e) => {
     const btn = e.target.closest('.btn-inline');
     
@@ -72,13 +73,14 @@ const controlRecipe = async () => {
         try {
             // Get the Recipe Data
             await state.recipe.getRecipe();
-
+            state.recipe.parseIngredients();
             // Calculate servings and time
             state.recipe.calcTime();
             state.recipe.calcServings();
 
             //Render the recipe
             console.log(state.recipe);
+            
         } catch (err) {
             alert('Error processing recipe')
         }
