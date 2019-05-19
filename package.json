@@ -30,6 +30,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
     "axios": "^0.18.0",
-    "dotenv-webpack": "^1.7.0"
+    "dotenv-webpack": "^1.7.0",
+    "fractional": "^1.0.0"
   }
 }
